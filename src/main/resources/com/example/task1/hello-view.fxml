@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1002.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task1.HelloController">
+    <children>
+        <Canvas fx:id="Canvas" height="716.0" width="1200.0" />
+        <FlowPane prefHeight="135.0" prefWidth="1189.0">
+            <children>
+                <Button fx:id="Circle" mnemonicParsing="false" onAction="#onClickButtonCircle" prefHeight="25.0" prefWidth="108.0" text="Circle">
+                    <FlowPane.margin>
+                        <Insets bottom="55.0" left="50.0" right="40.0" top="55.0" />
+                    </FlowPane.margin>
+                </Button>
+                <Button fx:id="Rectangle" mnemonicParsing="false" onAction="#onClickButtonRectangle" prefHeight="25.0" prefWidth="108.0" text="Rectangle">
+                    <FlowPane.margin>
+                        <Insets bottom="55.0" left="60.0" right="40.0" top="55.0" />
+                    </FlowPane.margin>
+                </Button>
+                <Button fx:id="RoundRectangle" mnemonicParsing="false" onAction="#onClickButtonRRectangle" prefHeight="25.0" prefWidth="108.0" text="Rounde Rectangle">
+                    <FlowPane.margin>
+                        <Insets bottom="55.0" left="60.0" right="40.0" top="55.0" />
+                    </FlowPane.margin>
+                </Button>
+                <ColorPicker fx:id="colorPick" prefHeight="25.0" prefWidth="118.0" />
+            </children>
+        </FlowPane>
+        <FlowPane prefHeight="120.0" prefWidth="1194.0">
+            <children>
+                <VBox prefHeight="118.0" prefWidth="209.0" />
+                <VBox prefHeight="118.0" prefWidth="202.0" />
+                <VBox prefHeight="151.0" prefWidth="207.0">
+                    <children>
+                        <TextArea prefHeight="29.0" prefWidth="207.0" fx:id="xStart" />
+                        <TextArea fx:id="yStart" prefHeight="33.0" prefWidth="207.0" />
+                        <TextArea fx:id="Tlength" prefHeight="5.0" prefWidth="207.0" />
+                        <TextArea fx:id="Twidth" prefHeight="0.0" prefWidth="207.0" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="64.0" prefWidth="215.0" />
+                <VBox prefHeight="151.0" prefWidth="184.0" />
+                <VBox prefHeight="151.0" prefWidth="177.0">
+                    <children>
+                        <Label fx:id="lastUsed" prefHeight="43.0" prefWidth="65.0" text="Last used:" />
+                    </children>
+                </VBox>
+            </children>
+        </FlowPane>
+    </children>
+</FlowPane>
